@@ -8,7 +8,7 @@ import androidx.annotation.RequiresApi
 import androidx.work.*
 import java.util.concurrent.TimeUnit
 
-const val CHANNEL_ID="10"
+const val CHANNEL_ID="CHANNEL_ID"
 
 //https://developer.android.com/training/notify-user/build-notification
 

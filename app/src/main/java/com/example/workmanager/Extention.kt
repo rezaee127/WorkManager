@@ -23,7 +23,7 @@ fun generateNotification(context: Context){
         .setPriority(NotificationCompat.PRIORITY_DEFAULT)
         .setStyle(
             NotificationCompat.BigTextStyle()
-            .bigText("Much longer text that cannot fit one line..."))
+            .bigText("salam"))
 
     // Set the intent that will fire when the user taps the notification
 //            .setContentIntent(pendingIntent)
