@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
         createNotificationChannel(this)
 
 
-//یک بار نوتیفای بده
+//یک بار نوتیفیکیشن بده
 //        val NotifyWorkRequest: WorkRequest =
 //            OneTimeWorkRequestBuilder<NotifyWorker>()
 //                .build()
@@ -38,10 +38,10 @@ class MainActivity : AppCompatActivity() {
 
 
 
-//هر یک دقیقه نوتیفای بده
+//هر 15 دقیقه نوتیفیکیشن بده . حداقلش 15 دقیقه هست
         val myUploadWork = PeriodicWorkRequestBuilder<NotifyWorker>(
-            1, TimeUnit.MINUTES, // repeatInterval (the period cycle)
-            1, TimeUnit.MINUTES) // flexInterval
+            15, TimeUnit.MINUTES, // repeatInterval (the period cycle)
+            15, TimeUnit.MINUTES) // flexInterval
             .build()
 
         WorkManager
@@ -52,7 +52,7 @@ class MainActivity : AppCompatActivity() {
 
 
 
-//حالت سوم در زمان خاص نوتیفای بده. مثل زمان کمبود باتری
+//حالت سوم در زمان خاص نوتیفیکیشن بده. مثل زمان کمبود باتری
 //
 //    val constraints2 = Constraints.Builder()
 //        .setRequiresBatteryNotLow(true)
