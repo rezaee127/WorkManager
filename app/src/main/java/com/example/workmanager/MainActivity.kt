@@ -27,6 +27,8 @@ class MainActivity : AppCompatActivity() {
         createNotificationChannel(this)
 
 
+
+
 //یک بار نوتیفیکیشن بده
 //        val NotifyWorkRequest: WorkRequest =
 //            OneTimeWorkRequestBuilder<NotifyWorker>()
@@ -35,6 +37,8 @@ class MainActivity : AppCompatActivity() {
 //        WorkManager
 //            .getInstance(this)
 //            .enqueue(NotifyWorkRequest)
+
+
 
 
 
@@ -47,6 +51,9 @@ class MainActivity : AppCompatActivity() {
         WorkManager
             .getInstance(this)
             .enqueue(myUploadWork)
+
+
+
 
 
 
